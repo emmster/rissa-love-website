@@ -211,6 +211,19 @@ p {
   margin-block-end: 0rem;
 }
 
+.custom-hr {
+  border: none;
+  border-top: 2px solid rgba(179, 182, 125, 0.35); /* soft accent color */
+  width: 150%;
+  max-width: 100vw;
+  margin: 24px auto 24px auto;
+  opacity: 0.8;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media screen and (orientation:landscape) and (min-width: 1024px)  {
   
   .content-wrapper {
