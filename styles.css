@@ -6,10 +6,9 @@ body {
   background: rgb(235, 230, 215) !important; 
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-flow: row;
-  justify-content:center;
-  align-items: center;
+  display: block;
+  position: relative;
+  overflow-x: hidden;
 }
 
 /* mobile first approach - Galaxy S20 (360x699px) as referance for both 
@@ -18,14 +17,22 @@ body {
 
 .container {
   text-align: center;
-  margin-top: 0%;
+  margin: 0;
+  padding: 32px 0 0 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content-wrapper {
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* min-height: 100vh; */
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
 }
 
 .logo-container {
@@ -33,7 +40,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 48px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .logo-container img.logo {
@@ -588,31 +598,24 @@ p {
     box-sizing: border-box;
     margin: 0 !important;
     padding: 0 !important;
-    min-height: 100vh;
     position: relative;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    background: #fff;
+    width: 100%;
     overflow-x: hidden;
   }
+  .container {
+    padding-top: 16px;
+  }
   .logo-container {
-    width: 100vw;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    overflow: visible;
-    padding-top: 200px;
-    margin: 0 !important;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
   }
   .logo-container img.logo {
-    max-width: 90vw;
-    width: auto;
+    width: 80%;
+    max-width: 300px;
     height: auto;
-    object-fit: contain;
-    display: block;
     margin: 0 auto;
+    display: block;
   }
 
   .table-title {
