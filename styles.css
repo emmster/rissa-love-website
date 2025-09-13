@@ -267,7 +267,7 @@ p {
 
   .table-title {
     margin-bottom: 20px !important;
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 
   .info-table {
@@ -584,13 +584,10 @@ p {
     padding: 0;
   }
 }
-@media screen and (min-width: 1024px) {
-  .logo-container img.logo {
-    max-width: 350px;
-    height: auto;
-  }
 
-  .table-title {
-    font-size: 2rem;
+@media screen and (max-width: 900px) {
+  .gp-info {
+    width: 80vw;
+    max-width: 80vw;
   }
 }
