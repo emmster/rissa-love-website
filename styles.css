@@ -584,15 +584,27 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+  html, body {
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: #fff;
+    overflow-x: hidden;
+  }
   .logo-container {
     width: 100vw;
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     overflow: visible;
-    padding: 0;
-    margin: 0;
+    padding-top: 80px;
+    margin: 0 !important;
   }
   .logo-container img.logo {
     max-width: 90vw;
