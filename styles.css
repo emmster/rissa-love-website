@@ -43,6 +43,20 @@ body {
   height: auto;
   object-fit: contain;
 }
+@media screen and (max-width: 900px) {
+  .logo-container img.logo {
+    max-width: 90vw;
+    height: auto;
+    object-fit: contain;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .logo-container img.logo {
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+  }
+}
 
 .strapline {
   margin-top: 0 !important;
