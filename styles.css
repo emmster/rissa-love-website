@@ -67,8 +67,8 @@ body {
 
 .info-table {
   border-collapse: collapse;
-  width: 80%;
-  max-width: 600px;
+  width: 75vw;
+  max-width: 75vw;
   background: rgb(240, 235, 220);
   border-radius: 8px;
   overflow: hidden;
@@ -245,12 +245,12 @@ p {
   }
 
   .table-title {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   .info-table {
-    width: 80%;
-    max-width: 600px;
+    width: 50vw;
+    max-width: 50vw;
   }
 
   a.disabled {
