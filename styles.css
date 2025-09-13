@@ -1,0 +1,536 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;  
+  background: rgb(235, 230, 215) !important; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content:center;
+  align-items: center;
+}
+
+/* mobile first approach - Galaxy S20 (360x699px) as referance for both 
+   portrait and landscape
+*/
+
+.container {
+  text-align: center;
+  margin-top: 0%;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.strapline {
+  margin-top: 10px;
+}
+
+.table-container {
+  margin: 5px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  clear: both;
+}
+
+.table-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.info-table {
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 600px;
+  background: rgb(240, 235, 220);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-table th {
+  background: rgb(179, 182, 125);
+  color: rgb(255, 255, 255);
+  padding: 8px 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.info-table td {
+  padding: 15px 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  color: rgb(78, 28, 62);
+  border-bottom: 1px solid rgba(179, 182, 125, 0.2);
+  min-height: 50px;
+}
+
+.info-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.info-table tbody tr:hover {
+  background: rgba(179, 182, 125, 0.1);
+}
+
+.bottom-info {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 600px;
+  gap: 20px;
+}
+
+.table-container .contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.table-container .socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.table-container .social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.table-container .social-links a {
+  font-size: 1.2rem;
+  color: rgba(179, 182, 125, 1);
+}
+
+.table-container .socialname p {
+  color: rgb(179, 182, 125);
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.comingsoon {
+  background: rgb(179, 182, 125);
+  border-radius: 3px;
+  color: rgb(255,255,255);
+}
+
+.comingsoon p {
+  padding-top: 8px;
+  padding-bottom: 5px;
+  margin-top: 2%;
+  font-size: 1.5rem;
+}
+
+.title {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  font-size: 1.75rem;
+  margin-top: 10%;
+}
+
+.subtitle {
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+}
+
+.socialname {
+  color: rgb(179, 182, 125);
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-top: 10%;
+}
+
+.socials {
+  margin-top: 3%;
+}
+
+.socials a {
+  font-size:1.5rem;
+  display: inline-block;
+  margin: 0px 6px 0px 6px;
+}
+
+.contacts {
+  margin-top: 10%;
+}
+
+.contacts a {
+  display: block;
+  font-size:1.25rem;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.claret {
+  color: rgb(78,28, 62);
+}
+
+a:link { text-decoration : none; }
+a {
+  color: rgba(179, 182, 125, 1);
+  
+}
+
+p {
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+}
+
+@media screen and (orientation:landscape) and (min-width: 1024px)  {
+  
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    padding: 20px 0;
+  }
+  
+  .logo-container {
+    text-align: center;
+  }
+  
+  .logo {
+    content:url("./rissalove_circular_logo_desktop.png"); 
+  }
+    
+  .strapline {
+    margin-top: 10px;
+  }
+
+  .container {
+    margin-top: 0%;
+  }
+
+  .table-container {
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table-title {
+    font-size: 2rem;
+  }
+
+  .info-table {
+    width: 80%;
+    max-width: 600px;
+  }
+
+  a.disabled {
+    pointer-events: none;
+  }
+
+}
+
+@media screen and (orientation:landscape) and ((max-width: 768px) or (max-width: 896px) or (max-width: 915px
+))  {
+
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    padding: 20px 0;
+  }
+  
+  .logo-container {
+    text-align: center;
+  }
+
+  .logo {
+    content:url("./rissalove_circular_logo_small.png"); 
+  }
+
+  .container {
+    margin-top: 1%;
+  }
+
+  .strapline {
+    margin-top: 8px;
+  }
+
+  .table-container {
+    margin-top: 6px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table-title {
+    font-size: 1.6rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    margin-top: 5%;
+  }
+
+  .socialname {
+    margin-top: 5%;
+  }
+  
+  .contacts {
+    margin-top: 5%;
+  }
+}
+
+@media screen and (orientation:portrait) and (min-width: 712px)  {
+    
+  .logo {
+    content:url("./rissalove_circular_logo_desktop.png"); 
+  }
+  
+}
+
+@media screen and (orientation:portrait) and (max-width: 320px) {
+
+  .logo {
+    content:url("./rissalove_circular_logo_small.png"); 
+  }
+
+  .container {
+    margin-top: 0%;
+  }
+
+  .info-table {
+    width: 95%;
+    font-size: 0.9rem;
+  }
+
+  .info-table th {
+    padding: 10px 5px;
+    font-size: 1rem;
+  }
+
+  .info-table td {
+    padding: 10px 5px;
+    font-size: 0.9rem;
+  }
+
+  .bottom-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .table-container .contacts {
+    align-items: center;
+  }
+
+  .table-container .socials {
+    align-items: center;
+  }
+
+  .comingsoon p {
+    padding-top: 8px;
+    padding-bottom: 5px;
+    margin-top: 5%;
+    font-size: 1rem;
+  }
+
+  .title {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    font-size: 1.5rem;
+    margin-top: 8%;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .socialname {
+    color: rgb(179, 182, 125);
+    font-weight: bolder;
+    font-size: 1.25rem;
+    margin-top: 8%;
+  }
+  
+  .socials a {
+    font-size:1.0rem;
+    display: inline-block;
+    margin: 0px 6px 0px 6px;
+  }
+
+  .contacts {
+    margin-top: 8%;
+  }
+
+  .contacts a {
+    display: block;
+    font-size:1rem;
+    font-weight: bold;
+    margin-bottom: 3%;
+  }
+
+}
+
+@media screen and (orientation:portrait) and (min-width: 712px)  {
+    
+  .logo {
+    content:url("./rissalove_circular_logo_desktop.png"); 
+  }
+  
+}
+
+/* iphone se 2020 */
+@media screen and (orientation:portrait) and (max-width: 375px) {
+
+  .logo {
+    content:url("./rissalove_circular_logo_small.png"); 
+  }
+
+  .container {
+    margin-top: 0%;
+  }
+
+  .comingsoon p {
+    padding-top: 8px;
+    padding-bottom: 5px;
+    margin-top: 5%;
+    font-size: 1rem;
+  }
+
+  .title {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    font-size: 1.5rem;
+    margin-top: 8%;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .socialname {
+    color: rgb(179, 182, 125);
+    font-weight: bolder;
+    font-size: 1.25rem;
+    margin-top: 8%;
+  }
+  
+  .socials a {
+    font-size:1.0rem;
+    display: inline-block;
+    margin: 0px 6px 0px 6px;
+  }
+
+  .contacts {
+    margin-top: 8%;
+  }
+
+  .contacts a {
+    display: block;
+    font-size:1rem;
+    font-weight: bold;
+    margin-bottom: 3%;
+  }
+
+}
+
+/* iphone 4 */
+@media screen and (orientation:landscape) and ((max-width: 480px) or (max-width: 568px)) {
+
+  .container {
+    margin-top: 5%;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    padding: 10px 0;
+  }
+
+  .logo-container {
+    text-align: center;
+  }
+  
+  .logo {
+    content:url("./rissalove_circular_logo_small.png"); 
+  }
+    
+  .strapline {
+    margin-top: 5px;
+  }
+
+  .table-container {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table-title {
+    font-size: 1.4rem;
+  }
+
+  .comingsoon p {
+    padding-top: 8px;
+    padding-bottom: 5px;
+    margin-top: 2%;
+    font-size: 1rem;
+  }
+
+  .title {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    font-size: 1.25rem;
+    margin-top: 5%;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .socialname {
+    color: rgb(179, 182, 125);
+    font-weight: bolder;
+    font-size: 1.0rem;
+    margin-top: 5%;
+  }
+  
+  .socials a {
+    font-size:1.0rem;
+    display: inline-block;
+    margin: 0px 6px 0px 6px;
+  }
+
+  .contacts {
+    margin-top: 5%;
+  }
+
+  .contacts a {
+    display: block;
+    font-size:1rem;
+    font-weight: bold;
+    margin-bottom: 3%;
+  }
+
+}
