@@ -590,4 +590,8 @@ p {
     width: 80vw;
     max-width: 80vw;
   }
+
+  .table-title {
+    margin-bottom: 10px !important;
+  }
 }
